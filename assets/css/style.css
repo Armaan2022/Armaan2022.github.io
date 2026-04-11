@@ -9697,12 +9697,29 @@ p {
   font-size: 35px;
 }
 
+.skill-icon {
+  font-size: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
 .card .card-body {
   font-size: 14px;
   color: #6c757d;
 }
 
 /* ── Portfolio / Projects ── */
+.project-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+.project-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .project-row {
   padding: 40px 0;
   border-bottom: 1px solid #e9ecef;
