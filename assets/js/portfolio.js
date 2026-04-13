@@ -1,3 +1,13 @@
+// navbar affix — adds .affix class when scrolled past the header so the logo fades in
+window.addEventListener('scroll', function () {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 510) {
+        navbar.classList.add('affix');
+    } else {
+        navbar.classList.remove('affix');
+    }
+});
+
 // smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
